@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const contaSeguidor = document.getElementById('seguir');
-    const seguidores = 176544;
+    const seguidores = 500;
 
     function converterSeguidor() {
 
