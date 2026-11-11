@@ -1,5 +1,4 @@
 <!-- npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch -->
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -11,13 +10,15 @@
 </head>
 
 <body class="bg-slate-950">
-    <header class="bg-[url('../banner.jpg')] bg-cover w-full h-50 opacity-70 rounded-b-2xl"></header>
+    <header class="bg-[url('../banner.gif')] bg- w-full h-50 opacity-100 rounded-b-2xl z-10"></header>
+    <main
+        class="-translate-y-10 relative h-full w-90 grid grid-cols-2 mx-auto gap-2 p-3 bg-slate-950 rounded-3xl overflow-hidden">
+        <img src="bgTexture.jpg" alt="" class="w-full h-full z-0 absolute rounded-3xl border-4 border-slate-950">
 
-    <main class="-translate-y-10 relative h-full w-90 flex flex-col items-center mx-auto gap-2 p-3 bg-slate-950 rounded-3xl">
-        <a href="https://www.tiktok.com/@soikepfc" target="_blank"
-            class="w-full h-30 border-4 border-slate-700 rounded-xl bg-slate-800 flex justify-evenly gap-1 p-3">
-            <img src="./perfilCat.jpeg" alt="perfil" class="h-full aspect-square rounded-2xl">
-
+        <!-- perfil soikep -->
+        <a href="https://tiktok.com" target="_blank"
+            class="w-full h-30 border-2 border-white rounded-xl bg-black/20 backdrop-blur-[2px] flex justify-evenly gap-1 p-3 col-span-2 z-2">
+            <img src="./perfilCat.jpeg" alt="perfil" class="h-full aspect-square rounded-xl border-2 border-white">
             <section class="w-[80%] p-4 flex flex-col ">
                 <div class="flex flex-row gap-2 text-2xl">
                     <h1 class="text-white font-bold">Soikep</h1>
@@ -28,39 +29,67 @@
             </section>
         </a>
 
-        <a href="https://www.youtube.com/@soikep" target="_blank"
-            class="w-full h-30 border-4 border-red-600 rounded-xl bg-red-700 flex justify-evenly gap-1 p-3">
-        
-
-            <section class="w-[80%] p-4 flex flex-col">
+        <!-- link discord -->
+        <a href="https://discord.gg" target="_blank"
+            class="w-full h-12 border-2 border-white rounded-xl bg-black/20 backdrop-blur-[2px] overflow-hidden flex flex-row gap-4 items-center z-2 hover:bg-indigo-600/80 transition-all duration-700 hover:scale-105 col-span-2">
+            <img src="./perfil.jpg" alt="perfil" class="h-full aspect-square bg-black">
+            <section class="w-[80%] flex flex-col">
                 <div class="flex flex-row gap-2 text-2xl">
-                    <h1 class="text-white font-bold">Soikep</h1>
-                    <p class="text-red-500">|</p>
-                    <p class="text-red-500">@soikep</p>
-                </div>
-                <h2 class="w-fit text-xl text-white " id=""></h2>
-            </section>
-
-        </a>
-
-        
-        <a href="https://discord.gg/tuBtBfZrrz" target="_blank"
-            class="w-full h-30 border-4 border-indigo-500 rounded-xl bg-indigo-600 flex justify-evenly gap-1 p-3">
-            <img src="./perfilCat.jpeg" alt="perfil" class="h-full aspect-square rounded-2xl">
-
-            <section class="w-[80%] p-4 flex flex-col">
-                <div class="flex flex-row gap-2 text-2xl">
-                    <h1 class="text-white font-bold">Resenha das lives</h1>
-                    
+                    <h1 class="text-white font-bold text-xl">Discord</h1>
                 </div>
             </section>
         </a>
+
+        <!-- link yout -->
+        <a href="https://youtube.com" target="_blank"
+            class="w-full h-12 border-2 border-white rounded-xl bg-black/20 backdrop-blur-[2px] overflow-hidden flex flex-row gap-4 items-center z-2 hover:bg-red-600/80 transition-all duration-700 hover:scale-105">
+            <img src="./ytMark.jpg" alt="perfil" class="h-full aspect-square">
+            <section class="w-[80%] flex flex-col">
+                <div class="flex flex-row gap-2 text-2xl">
+                    <h1 class="text-white font-bold text-xl">Youtube</h1>
+                </div>
+            </section>
+        </a>
+
+        <!-- link roblox -->
+        <a href="https://roblox.com" target="_blank"
+            class="w-full h-12 border-2 border-white rounded-xl bg-black/20 backdrop-blur-[2px] overflow-hidden flex flex-row gap-4 items-center z-2 hover:bg-blue-700/80 transition-all duration-700 hover:scale-105 ">
+            <img src="./roblox.png" alt="perfil" class="h-full aspect-square bg-black">
+            <section class="w-[80%] flex flex-col">
+                <div class="flex flex-row gap-2 text-2xl">
+                    <h1 class="text-white font-bold text-xl">Roblox</h1>
+                </div>
+            </section>
+        </a>
+
+        <a href="https://livepix.gg" target="_blank" id="pix"
+            class="w-full h-12 rounded-xl border-2 border-white bg-white overflow-hidden flex flex-row gap-4 items-center z-2 col-span-2 transition-all duration-700 hover:scale-105">
+            <img src="./livePix.jpg" alt="perfil" class="h-full aspect-square bg-black"
+                style="image-rendering: pixelated;">
+            <section class="w-[80%] flex flex-col">
+                <div class="flex flex-row gap-2 text-2xl">
+                    <h1 class="text-black font-bold text-[22px] font-pixel">Donate</h1>
+                </div>
+            </section>
+        </a>
+
+        <!-- minecraft server -->
+        <section
+            class="border-2 border-white bg-black/20 backdrop-blur-[2px] h-50 col-span-2 z-2 rounded-2xl overflow-hidden relative">
+            <div class="bg-white bottom-14 left-2 absolute rounded-[4px] p-1 font-pixel text-gray-600 text-[10px]">clique no nome para copiar-lo</div>
+            <div
+                class="bg-white h-10 absolute bottom-2 left-2 right-2 rounded-[4px] px-3 overflow-hidden flex flex-row items-center">
+                <p id="mine-ip" class="font-pixel whitespace-nowrap cursor-pointer">Mine: Soikep.aternos.me</p>
+                <img src="minecraft.jpg" alt="" class="w-30 translate-x-10 translate-y-5">
+            </div>
+        </section>
+
+        <img id="david" src="david.gif" alt="" class=" w-15 z-2 absolute bottom-55 right-4">
     </main>
 
-
-
-
-    <main></main>
+    <footer class="h-10 w-full bg-white absolute text-gray-400 p-2 font-pixel">
+        <p>Por Nurah - SoikepPage</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
