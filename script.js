@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const pix = document.getElementById('pix');
     const mineIp = document.getElementById('mine-ip');
 
-    const seguidores = 439;
+    const seguidores = 444;
 
     function converterSeguidor() {
         let numberSize = seguidores.toString().length;
